@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <h1>{{ project.name }}</h1>
+        <a href="{% url 'projects' %}">Back to Project List</a>
+        <h2>Project Information</h2>
+        <div>
+            <p>Bank: {{ project.bank }}</p>
+            <p>Country: {{ project.country }}</p>
+            <p>Project ID: {{ project.project_number }}</p>
+        </div>
+    </body>
+</html>

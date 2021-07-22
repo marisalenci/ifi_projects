@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <h1>Projects</h1>
+        <h2>List of all IFI projects</h2>
+        <div>
+            <a href="{% url 'project-create' %}">Add a project</a>
+            <a href="{% url 'project-upload' %}">Upload Project CSV</a>
+        </div>
+        <div>
+            {% for project in project_list %}
+                <a href="{% url 'project-detail' pk=project.id %}">{{ project }}</a>
+            {% endfor %}
+        </div>
+    </body>
+</html>

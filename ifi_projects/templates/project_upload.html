@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <h1>Upload Projects</h1>
+        <div>
+            <a href="{% url 'projects' %}">Back to Project List</a>
+        </div>
+        <form action="" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <label>Add CSV File</label>
+            <input type="file" name="csv_file">
+            <input type="submit" value="Submit">
+        </form>
+
+    </body>
+</html>

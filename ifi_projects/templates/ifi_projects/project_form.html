@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <h1>Add Project</h1>
+        <div>
+            <a href="{% url 'projects' %}">Back to Project List</a>
+        </div>
+        <div>
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Submit">
+        </div>
+    </body>
+</html>

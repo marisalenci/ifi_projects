@@ -1,0 +1,17 @@
+# Python
+*.pyc
+*~
+/.vscode
+local_settings.py
+__pycache__
+.env
+myvenv/
+venv/
+ifi_proj_venv/
+# Database
+db.sqlite3
+/static/
+._*
+.DS_Store
+.fseventsd
+.Spotlight-V100
